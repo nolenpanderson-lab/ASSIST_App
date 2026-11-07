@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AI_Model/AI_Model.vcxproj" Id="adcdbf08-f0f0-41ec-aa8f-7d3d01708f51" />
+  <Project Path="ASSIST_App/ASSIST_App.csproj" />
+</Solution>

@@ -1,0 +1,100 @@
+﻿<Window x:Class="ASSIST_App.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LoginWindow"
+        WindowState="Maximized"
+        Height="450"
+        Width="800"
+        Background="#F5F1FA">
+
+    <Grid>
+        <Viewbox Stretch="Uniform">
+            <Grid Width="800" Height="450">
+
+                <!-- Login Box -->
+                <Border BorderBrush="#DCCBFA"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Width="330"
+                        Height="350"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Margin="65,0,0,0">
+
+                    <StackPanel Margin="10">
+
+                        <Label Content="WELCOME!"
+                               Width="150"
+                               Height="56"
+                               FontSize="24"
+                               FontFamily="Rockwell"
+                               HorizontalAlignment="Center"
+                               Foreground="#7545B5"/>
+
+                        <Label Content="Username:"
+                               Width="272"
+                               Height="30"
+                               FontSize="18"
+                               Foreground="Black"/>
+
+                        <TextBox x:Name="Username"
+                                 Width="244"
+                                 Height="32"
+                                 Padding="10"
+                                 TextWrapping="Wrap"/>
+
+                        <Label Content="Password:"
+                               Width="268"
+                               Height="30"
+                               FontSize="18"
+                               Foreground="Black"/>
+
+                        <PasswordBox x:Name="Password"
+                                     Width="249"
+                                     Height="37"/>
+                        <Button Content="Login"
+                                Width="109"
+                                Height="40"
+                                FontSize="18"
+                                Background="#DCCBFA"
+                                Margin="0,15,0,0"
+                                Click="Button_Click"/>
+
+                        <TextBlock Height="30"
+                                   FontSize="14"
+                                   Width="52"
+                                   Margin="0,15,0,0">
+                            <Hyperlink Click="SkipLogin_Click"
+                                       Foreground="Black">
+                                <Run Text="Sign Up!"/>
+                            </Hyperlink>
+                        </TextBlock>
+
+                    </StackPanel>
+                </Border>
+
+                <!-- Login Image -->
+                <Image Source="/images (1).jpg"
+                       Width="310"
+                       Height="310"
+                       HorizontalAlignment="Right"
+                       VerticalAlignment="Center"
+                       Margin="0,0,55,0"
+                       Stretch="Uniform"/>
+
+                <!-- Continue Without Logging In -->
+                <TextBlock HorizontalAlignment="Left"
+                           VerticalAlignment="Bottom"
+                           Margin="140,0,0,70"
+                           FontSize="14">
+                    <Hyperlink Click="SkipLogin_Click"
+                               Foreground="Black">
+                        <Run Text="Continue Without Logging In"/>
+                    </Hyperlink>
+                </TextBlock>
+
+            </Grid>
+        </Viewbox>
+    </Grid>
+
+</Window>
